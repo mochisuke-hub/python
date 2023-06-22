@@ -5,10 +5,10 @@ import dlib
 detector = dlib.get_frontal_face_detector()
 
 # 顔器官検出器の初期化
-predictor = dlib.shape_predictor('path')
+predictor = dlib.shape_predictor('C:\\Users\\user\\PycharmProjects\\pythonProject\\hoge20230622\\dlib-models-master\\shape_predictor_68_face_landmarks.dat')
 
 # 画像の読み込み
-image = cv2.imread('path')
+image = cv2.imread('C:\\Users\\user\\PycharmProjects\\pythonProject\\hoge20230622\\face\\face01.jpg')
 
 # グレースケールに変換
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
